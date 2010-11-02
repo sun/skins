@@ -14,14 +14,13 @@
  *
  * Define the API version of this Skinr plugin. This is required when
  * creating a new Skinr plugin. It checks to make sure your Skins are compatible
- * with the installed version of Skinr.
+ * with the installed version of Skinr. The plugin will inherit information such
+ * as what version of core it applies to from the module or theme implementing
+ * it.
  *
  * The "hook" prefix is substituted with the name of the module or theme that
  * implements it, e.g. THEMENAME_PLUGINNAME_skinr_info(), or
  * MODULENAME_PLUGINNAME_skinr_info().
- *
- * The plugin will inherit information such as what version of core it applies
- * to from the module or theme implementing it.
  *
  * @todo We are not sure this will be necessary, if we do not end up using
  * and external too such as CTools to handle plugin functionality. If we do use
@@ -55,13 +54,12 @@ function skinr_styles_skinr_info() {
  *   and a technical description of the skins it contains for the "Manage skins"
  *   page.
  * - #screenshot (optional): The path to an image containing a screenshot of the
- *   skin, which will be used in the "Manage Skins" page. Defaults to
+ *   skin, which will be used on the "Manage Skins" page. Defaults to
  *   $path_to_plugin/screenshot.png, so only needs to be specified if different.
  *
  * The "hook" prefix is substituted with the name of the module or theme that
  * implements it, followed by the plugin name, e.g.
  * THEMENAME_PLUGINNAME_skinr_groups(), or MODULENAME_PLUGINNAME_skinr_groups().
- *
  *
  * @todo Create Skinr's default group implementation. Skinr will provide a
  * plugin containing groups to provide some consistency in the UI, promote the
@@ -100,13 +98,13 @@ function skinr_styles_skinr_groups() {
  * - #group (optional): The group the skin is attached to; defaults to a Skinr
  *   provided group.
  * - #type (optional): The type of form element. Allowed values:
- *   - checkboxes (default): For single and multiple options. Does not need to
- *     be set manually, as Skinr will apply this by default.
- *   - select: A single option can be chosen, but many exist.
- *   - radios: A single option can be chosen
+ *   - checkboxes (default): Use when single or multiple options can be chosen.
+ *     Does not need to be set manually, as Skinr will apply this by default.
+ *   - select: Use when a single option can be chosen, but many exist.
+ *   - radios: Use when only single option can be chosen.
  * - #weight (discouraged): Sets the weight of the skin inside the group; NULL
  *   by default.
- * - #stylesheets: A array containing information about stylesheet(s) the skin
+ * - #stylesheets (optional): A array containing information about stylesheet(s) the skin
  *   requires. This maps to the functionality of drupal_add_css() with one
  *   exception: paths are automatically assumed as relative to the plugin
  *   directory, unless external. Examples:
@@ -121,8 +119,8 @@ function skinr_styles_skinr_groups() {
  *            ),
  *          ),
  *       )
- * - #scripts: A array containing information about script(s) the skin
- *   requires. This maps to the functionality of drupal_add_js() with one
+ * - #scripts (optional): A array containing information about script(s) the
+ *   skin requires. This maps to the functionality of drupal_add_js() with one
  *   exception: paths are automatically assumed as relative to the plugin
  *   directory, unless external. Examples:
  *   - Simple:
@@ -140,27 +138,30 @@ function skinr_styles_skinr_groups() {
  *   for the user to choose from when applying skins. Each option key should be
  *   a machine name describing the option. An option should including the
  *   following keys:
- *   - #label: The option label.
- *   - #class: An array containing one or more classes the skin should apply. A
- *     single class may be entered as a string, but multiple classes should be
- *     entered as an array: For example:
+ *   - #label (required): The option label.
+ *   - #class (required): An array containing one or more classes the skin
+ *     should apply. A single class may be entered as a string, but multiple
+ *     classes should be entered as an array: For example:
  *     - Single:
  *       '#class' => 'class'
  *     - Multiple:
  *       '#class' => array('class-b', 'class-b') 
- *   - #stylesheets: Same as above, but applies to a specific option only.
- *   - #scripts: Same as above, but applies to a specific option only.
- * - #features: An array containing certain allowed hooks, which allow you to
- *   limit where the skin can be used. Allowed options include: block,
- *   block__MODULE, comment, comment__NODETYPE, comment_wrapper,
+ *   - #stylesheets (optional): Same syntax as above, but applies to a specific
+ *     option only.
+ *   - #scripts (optional): Same syntax as above, but applies to a specific
+ *     option only.
+ * - #features (optional): An array containing certain allowed hooks, which
+ *   allow you to limit where the skin can be used. Allowed options include:
+ *   block, block__MODULE, comment, comment__NODETYPE, comment_wrapper,
  *   comment__wrapper_NODETYPE, node, node__NODETYPE, region,
  *   region__REGIONNAME, panels_display, panels_region, panels_pane, views_view,
  *   views_view__STYLENAME, views_view__DISPLAY_NAME, views_view__VIEWNAME, and
  *   views_view__VIEWNAME_DISPLAYNAME.
- * - #default_status: Skins are disabled by default to keep UI clutter to a
- *   minimum. In some cases, like contrib themes, it makes sense to enable skins
- *   which are required to make the theme work properly by default. Setting this
- *   property to 1, will cause it to be enabled it by default.
+ * - #default_status (optional): Skins are disabled by default to keep UI
+ *   clutter to a minimum. In some cases, like contrib themes, it makes sense to
+ *   enable skins which are required to make the theme work properly by default.
+ *   Setting this property to 1, will cause it to be enabled it by default for
+ *   all installed themes.
  *
  * Programmatically added data:
  * - #status: An array containing each theme as the key and the status of the
