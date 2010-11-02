@@ -1,0 +1,41 @@
+/* Font family.
+------------------------------------------------------------------------------*/
+.font-1 { font-family: Arial, Helvetica, "Nimbus Sans L", "Liberation Sans", "FreeSans", sans-serif; }
+.font-2 { font-family: "Lucida Grande", "Lucida Sans Unicode", "DejaVu Sans", Arial, sans-serif; }
+.font-3 { font-family: "Geneva", "Bitstream Vera Serif", Tahoma, sans-serif; }
+.font-4 { font-family: "Georgia", "Bitstream Vera Serif", serif; }
+.font-5 { font-family: Tahoma, "Geneva", "DejaVu Sans Condensed", sans-serif; }
+.font-6 { font-family: "Bitstream Vera Sans", Verdana, Arial, sans-serif; }
+.font-7 { font-family: "Palatino Linotype", "URW Palladio L", "Book Antiqua", "Palatino", serif; }
+.font-8 { font-family: "Free Serif", "Times New Roman", Times, serif; }
+
+
+/* Font sizing.
+------------------------------------------------------------------------------*/
+/* based on body = 13px */
+.size-1 { font-size: 0.846em; } /* 13px x 0.846 = 11px */
+.size-2 { font-size: 0.923em; } /* 13px x 0.923 = 12px */
+.size-3 { font-size: 1.077em; } /* 13px x 1.077 = 14px */
+.size-4 { font-size: 1.231em; } /* 13px x 1.231 = 16px */
+.size-5 { font-size: 1.385em; } /* 13px x 1.385 = 18px */
+.size-6 { font-size: 1.538em; } /* 13px x 1.538 = 11px */
+
+
+/* Style options.
+------------------------------------------------------------------------------*/
+.fs-normal { font-style: normal; }
+.fs-italic { font-style: italic; }
+
+.fw-normal { font-weight: normal; }
+.fw-bold { font-weight: bold; }
+
+
+.fv-normal { font-variant: normal; }
+.fv-smallcaps { font-variant: small-caps; }
+
+
+/* Alignment.
+------------------------------------------------------------------------------*/
+.a-left { text-align: left; }
+.a-center { text-align: center; }
+.a-right { text-align: right; }

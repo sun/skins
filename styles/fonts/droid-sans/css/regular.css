@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'DroidSansRegular';
+	src: url('../eot/DroidSans.eot');
+	src: local('Droid Sans'), local('DroidSans'), url('../woff/DroidSans.woff') format('woff'), url('../ttf/DroidSans.ttf') format('truetype'), url('../svg/DroidSans.svg#DroidSans') format('svg');
+}
+.droid-sans h1,
+.droid-sans h2,
+.droid-sans h3 {
+  font-family: "DroidSansRegular", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}

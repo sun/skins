@@ -1,0 +1,11 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+	font-family: 'FontinSansSmallCaps';
+	src: url('../eot/small-caps.eot');
+	src: local('Fontin Sans'), local('FontinSans-SmallCaps'), url('../woff/small-caps.woff') format('woff'), url('../otf/small-caps.otf') format('opentype'), url('../svg/small-caps.svg#FontinSans-SmallCaps') format('svg');
+}
+.fontin-sans-sc h1,
+.fontin-sans-sc h2,
+.fontin-sans-sc h3 {
+  font-family: "FontinSansSmallCaps", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}

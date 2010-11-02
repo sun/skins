@@ -1,0 +1,11 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+	font-family: 'FontinSansRegular';
+	src: url('../eot/regular.eot');
+	src: local('Fontin Sans'), local('FontinSans-Regular'), url('../woff/regular.woff') format('woff'), url('../otf/regular.otf') format('opentype'), url('../svg/regular.svg#FontinSans-Regular') format('svg');
+}
+.fontin-sans h1,
+.fontin-sans h2,
+.fontin-sans h3 {
+  font-family: "FontinSansRegular", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}

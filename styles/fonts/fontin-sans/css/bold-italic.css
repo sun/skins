@@ -1,0 +1,11 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+	font-family: 'FontinSansBoldItalic';
+	src: url('../eot/bold-italic.eot');
+	src: local('Fontin Sans'), local('FontinSans-BoldItalic'), url('../woff/bold-italic.woff') format('woff'), url('../otf/bold-italic.otf') format('opentype'), url('../svg/bold-italic.svg#FontinSans-BoldItalic') format('svg');
+}
+.fontin-sans-bi h1,
+.fontin-sans-bi h2,
+.fontin-sans-bi h3 {
+  font-family: "FontinSansBoldItalic", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}

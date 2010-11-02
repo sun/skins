@@ -1,0 +1,11 @@
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.com */ 
+@font-face {
+	font-family: 'Museo700';
+	src: url('../eot/700.eot');
+	src: local('Museo'), local('Museo-700'), url('../woff/700.woff') format('woff'), url('../otf/700.otf') format('opentype'), url('../svg/700.svg#Museo-700') format('svg');
+}
+.museo-700 h1,
+.museo-700 h2,
+.museo-700 h3 {
+  font-family: "Museo700", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
+}
