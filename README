@@ -1,1 +1,6 @@
 This is a collection of skins we use for testing during development of Skinr module. These will not be supported, and will likely change dramatically on a regular basis, so use them at your own risk.
+
+Skinr is in the process of removing support for .info files and moving to a PHP plugin implementation.  Development is happening in Drupal 7 (HEAD).
+
+For information, or to help with this work please visit the issue queue and read up:
+http://drupal.org/project/issues/skinr?status=Open&version=7.x
