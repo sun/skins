@@ -1,8 +1,0 @@
-name = "960 Grid System Skin"
-description = A set of skins providing 12/16/24 column <a href="http://960.gs">960.gs</a> layouts.
-package = "Skinr"
-core = 7.x
-
-files[] = ninesixty_gs.module
-
-configure = appearance/skinr/skins
