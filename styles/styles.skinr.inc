@@ -306,37 +306,37 @@ function skinr_styles_skinr_skins() {
     '#options' => array(
       'droid_sans' => array(
         '#label' => t('Droid Sans'),
-        '#class' => 'ff droid-sans',
+        '#class' => array('ff', 'droid-sans'),
         '#stylesheets' => array('fonts/droid-sans/css/normal.css'),
       ),
       'droid_sans_bold' => array(
         '#label' => t('Droid Sans (bold)'),
-        '#class' => 'ff droid-sans-b',
+        '#class' => array('ff', 'droid-sans-b'),
         '#stylesheets' => array('fonts/droid-sans/css/bold.css'),
       ),
       'fontin_sans' => array(
         '#label' => t('Fontin Sans'),
-        '#class' => 'ff fontin-sans',
+        '#class' => array('ff', 'fontin-sans'),
         '#stylesheets' => array('fonts/fontin-sans/css/regular.css'),
       ),
       'fontin_sans_bold' => array(
         '#label' => t('Fontin Sans (bold)'),
-        '#class' => 'ff fontin-sans-b',
+        '#class' => array('ff', 'fontin-sans-b'),
         '#stylesheets' => array('fonts/fontin-sans/css/bold.css'),
       ),
       'museo_300' => array(
         '#label' => t('Museo (300)'),
-        '#class' => 'ff museo-300',
+        '#class' => array('ff', 'museo-300'),
         '#stylesheets' => array('fonts/museo/css/300.css'),
       ),
       'museo_500' => array(
         '#label' => t('Museo (500)'),
-        '#class' => 'ff museo-500',
+        '#class' => array('ff', 'museo-500'),
         '#stylesheets' => array('fonts/museo/css/500.css'),
       ),
       'museo_700' => array(
         '#label' => t('Museo (700)'),
-        '#class' => 'ff museo-700',
+        '#class' => array('ff', 'museo-700'),
         '#stylesheets' => array('fonts/museo/css/700.css'),
       ),
     ),
