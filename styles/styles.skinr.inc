@@ -198,7 +198,7 @@ function skinr_styles_skinr_skins() {
   $skins['skinr_font'] = array(
     '#title' => t('Font family'),
     '#type' => 'select',
-    '#group' => 'skinr_styles_content',
+    '#group' => 'skinr_styles_typography',
     '#stylesheets' => array('css/typography.css'),
     '#options' => array(
       'font_1' => array(
@@ -238,7 +238,7 @@ function skinr_styles_skinr_skins() {
   $skins['skinr_font_size'] = array(
     '#title' => t('Font size'),
     '#type' => 'select',
-    '#group' => 'skinr_styles_content',
+    '#group' => 'skinr_styles_typography',
     '#stylesheets' => array('css/typography.css'),
     '#options' => array(
       'size_1' => array(
@@ -270,7 +270,7 @@ function skinr_styles_skinr_skins() {
   $skins['skinr_font_style'] = array(
     '#title' => t('Font style'),
     '#type' => 'radios',
-    '#group' => 'skinr_styles_content',
+    '#group' => 'skinr_styles_typography',
     '#stylesheets' => array('css/typography.css'),
     '#options' => array(
       'normal' => array(
@@ -285,7 +285,7 @@ function skinr_styles_skinr_skins() {
   );
   $skins['skinr_font_other'] = array(
     '#title' => t('Font weight'),
-    '#group' => 'skinr_styles_content',
+    '#group' => 'skinr_styles_typography',
     '#stylesheets' => array('css/typography.css'),
     '#options' => array(
       'bold' => array(
